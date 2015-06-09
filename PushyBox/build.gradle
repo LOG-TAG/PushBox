@@ -1,26 +1,28 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:0.8.+'
-    }
-}
-apply plugin: 'android'
+//buildscript {
+  //  repositories {
+   //     mavenCentral()
+ //   }
+  //  dependencies {
+ //       classpath 'com.android.tools.build:gradle:0.8.+'
+  //  }
+//}
+apply plugin: 'com.android.application'
 
 repositories {
     mavenCentral()
 }
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19.0.1"
+compileSdkVersion 22
+    //buildToolsVersion "21.1.2"
+    buildToolsVersion "22.0.1"
 
     defaultConfig {
-        minSdkVersion 10
-        targetSdkVersion 19
+     applicationId "com.baasbox.android.pushybox"
+    minSdkVersion 14
+        targetSdkVersion 22
         versionCode 1
-        versionName "1.0"
+        versionName "v0.1L"
     }
     buildTypes {
         release {
